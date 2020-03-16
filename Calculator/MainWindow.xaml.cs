@@ -20,10 +20,10 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
-        int num1;
-        int num2;
+        int num1 = 0;
+        int num2 = 0;
         string result;
-        string mathChoise;
+        string mathChoise = "";
         List<int> inputs = new List<int>();
         public MainWindow()
         {
@@ -37,7 +37,8 @@ namespace Calculator
 
         private void b1_Click(object sender, RoutedEventArgs e)
         {
-            TextBox.Text += 1;
+            num1 = (num1 * 10) + 1;
+            TextBox.Text = num1.ToString();
         }
 
         private void b2_Click(object sender, RoutedEventArgs e)
