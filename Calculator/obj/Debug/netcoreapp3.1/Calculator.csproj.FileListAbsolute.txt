@@ -1,0 +1,17 @@
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\bin\Debug\netcoreapp3.1\Calculator.exe
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\bin\Debug\netcoreapp3.1\Calculator.deps.json
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\bin\Debug\netcoreapp3.1\Calculator.runtimeconfig.json
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\bin\Debug\netcoreapp3.1\Calculator.runtimeconfig.dev.json
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\bin\Debug\netcoreapp3.1\Calculator.dll
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\bin\Debug\netcoreapp3.1\Calculator.pdb
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\obj\Debug\netcoreapp3.1\Calculator.csprojAssemblyReference.cache
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\obj\Debug\netcoreapp3.1\Calculator_MarkupCompile.cache
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\obj\Debug\netcoreapp3.1\Calculator_MarkupCompile.lref
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\obj\Debug\netcoreapp3.1\Calculator.g.resources
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfoInputs.cache
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfo.cs
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\obj\Debug\netcoreapp3.1\Calculator.dll
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Calculator\obj\Debug\netcoreapp3.1\Calculator.pdb
