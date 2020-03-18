@@ -10,9 +10,9 @@
         <Button x:Name="equals" Content="=" HorizontalAlignment="Left" Margin="277,431,0,0" VerticalAlignment="Top" Height="49" Width="58" FontSize="24" FontFamily="Arial Black"/>
         <TextBlock x:Name="TextBox" HorizontalAlignment="Center" Margin="0,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="364" FontWeight="Normal" FontFamily="Arial Black" FontSize="24" Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"/>
         <Button x:Name="plus" Content="+" HorizontalAlignment="Left" Margin="277,369,0,0" VerticalAlignment="Top" Height="49" Width="58" FontSize="24" FontFamily="Arial Black" Click="plus_Click"/>
-        <Button x:Name="minus" Content="-" HorizontalAlignment="Left" Margin="277,308,0,0" VerticalAlignment="Top" Height="49" Width="58" FontSize="24" FontFamily="Arial Black"/>
+        <Button x:Name="minus" Content="-" HorizontalAlignment="Left" Margin="277,308,0,0" VerticalAlignment="Top" Height="49" Width="58" FontSize="24" FontFamily="Arial Black" Click="minus_Click"/>
         <Button x:Name="multiply" Content="x" HorizontalAlignment="Left" Margin="277,249,0,0" VerticalAlignment="Top" Height="49" Width="58" FontSize="24" FontFamily="Arial Black"/>
-        <Button x:Name="division" Content="/" HorizontalAlignment="Left" Margin="277,191,0,0" VerticalAlignment="Top" Height="49" Width="58" FontSize="24" FontFamily="Arial Black"/>
+        <Button x:Name="divide" Content="/" HorizontalAlignment="Left" Margin="277,191,0,0" VerticalAlignment="Top" Height="49" Width="58" FontSize="24" FontFamily="Arial Black"/>
         <Button x:Name="b3" Content="3" HorizontalAlignment="Left" Margin="205,369,0,0" VerticalAlignment="Top" Height="49" Width="58" FontSize="24" FontFamily="Arial Black" Click="b3_Click"/>
         <Button x:Name="b2" Content="2" HorizontalAlignment="Left" Margin="133,369,0,0" VerticalAlignment="Top" Height="49" Width="58" FontSize="24" FontFamily="Arial Black" Click="b2_Click"/>
         <Button Content="0" HorizontalAlignment="Left" Margin="133,431,0,0" VerticalAlignment="Top" Height="49" Width="58" FontSize="24" FontFamily="Arial Black" Click="Button_Click"/>

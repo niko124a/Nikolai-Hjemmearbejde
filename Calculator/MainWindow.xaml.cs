@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Calculator
 {
@@ -37,8 +25,17 @@ namespace Calculator
 
         private void b1_Click(object sender, RoutedEventArgs e)
         {
-            num1 = (num1 * 10) + 1;
-            TextBox.Text = num1.ToString();
+            if (mathChoise == "")
+            {
+                num1 = (num1 * 10) + 1;
+                TextBox.Text = num1.ToString();
+            }
+            else
+            {
+                num2 = (num2 * 10) + 1;
+                TextBox.Text = num2.ToString();
+            }
+
         }
 
         private void b2_Click(object sender, RoutedEventArgs e)
