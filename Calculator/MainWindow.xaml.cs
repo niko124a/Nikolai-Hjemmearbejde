@@ -91,20 +91,12 @@ namespace Calculator
         }
         private void plus_Click(object sender, RoutedEventArgs e)
         {
-            if (num == "")
-            {
-                
-            }
-            else
-            {
-                numbers.Add(Convert.ToDouble(num));
-                operation = "+";
-                op.Add(operation);
-                num = "";
-                operation = "";
-                TextBox.Text = "0";
-            }
-            
+            numbers.Add(Convert.ToDouble(num));
+            operation = "+";
+            op.Add(operation);
+            num = "";
+            operation = "";
+            TextBox.Text = "0";
         }
 
         private void multiply_Click(object sender, RoutedEventArgs e)
@@ -161,7 +153,6 @@ namespace Calculator
 
             }
             numbers.Add(result);
-            num = "";
             TextBox.Text = result.ToString();
         }
         private void ClearEntry_Click(object sender, RoutedEventArgs e)
