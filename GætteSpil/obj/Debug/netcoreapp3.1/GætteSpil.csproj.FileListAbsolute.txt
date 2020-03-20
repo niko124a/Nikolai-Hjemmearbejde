@@ -1,0 +1,11 @@
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\bin\Debug\netcoreapp3.1\GætteSpil.exe
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\bin\Debug\netcoreapp3.1\GætteSpil.deps.json
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\bin\Debug\netcoreapp3.1\GætteSpil.runtimeconfig.json
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\bin\Debug\netcoreapp3.1\GætteSpil.runtimeconfig.dev.json
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\bin\Debug\netcoreapp3.1\GætteSpil.dll
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\bin\Debug\netcoreapp3.1\GætteSpil.pdb
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\obj\Debug\netcoreapp3.1\GætteSpil.csprojAssemblyReference.cache
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\obj\Debug\netcoreapp3.1\GætteSpil.AssemblyInfoInputs.cache
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\obj\Debug\netcoreapp3.1\GætteSpil.AssemblyInfo.cs
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\obj\Debug\netcoreapp3.1\GætteSpil.dll
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\obj\Debug\netcoreapp3.1\GætteSpil.pdb
