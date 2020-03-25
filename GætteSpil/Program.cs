@@ -10,53 +10,59 @@ namespace GætteSpil
         {
             Random randomNum = new Random();
             int number = randomNum.Next(11);
-            int tries = 0;
+            int tries = 3;
 
-            while (true)
+
+           
+
+
+            while (tries >= 0)
             {
                 Console.WriteLine("Hello player, welcome to this EPIC game, where you are supposed to guess a number between 0 and 10");
-                Console.WriteLine("To get started, press 1");
+                Console.WriteLine("To get started, press any key");
+                Console.ReadKey();
+                Console.Clear();
+                Console.WriteLine($"Please type your guess here: ");
+                playerGuess = Console.ReadLine();
 
-
-                for (tries = 3; tries > 0; tries--)
+                if (Convert.ToInt32(playerGuess) == number)
                 {
-                    var playerInput = Console.ReadKey();
-                    if (playerInput.Key == ConsoleKey.D1)
-                    {
-                        Console.Clear();
-                        Console.WriteLine($"Please type your guess here: ");
-                        playerGuess = Console.ReadLine();
+                    Console.WriteLine("You won!");
+                    tries = 3;
+                    number = randomNum.Next(11);
+                    Console.ReadKey();
+                    Console.Clear();
 
-                        if (Convert.ToInt32(playerGuess) == number)
-                        {
-                            Console.WriteLine("You won!");
-                            tries = 3;
-                            Console.ReadKey();
-                            Console.Clear();
-                        }
-                        else if (Convert.ToInt32(playerGuess) < number)
-                        {
-                            Console.WriteLine("Your guess was too low");
-                            Console.ReadKey();
-                            Console.Clear();
-                        }
-                        else if (Convert.ToInt32(playerGuess) > number)
-                        {
-                            Console.WriteLine("Your guess was too high");
-                            Console.ReadKey();
-                            Console.Clear();
-                        }
-                        else if (tries == 0)
-                        {
-                            Console.WriteLine("Game over!");
-                            Console.ReadKey();
-                            Console.Clear();
-                        }
-
-                        tries--;
-                        Console.WriteLine($"You now have {tries} left");
-                    }
                 }
+                if (Convert.ToInt32(playerGuess) < number)
+                {
+                    Console.WriteLine("Your guess was too low");
+                    Console.ReadKey();
+                    Console.Clear();
+                    tries--;
+                }
+                if (Convert.ToInt32(playerGuess) > number)
+                {
+                    Console.WriteLine("Your guess was too high");
+                    Console.ReadKey();
+                    Console.Clear();
+                    tries--;
+                }
+                if (tries == 0)
+                {
+                    Console.WriteLine("Game over!");
+                    Console.WriteLine();
+                    Console.WriteLine("Press any key to try again");
+                    Console.ReadKey();
+                    Console.Clear();
+                    tries = 3;
+                    number = randomNum.Next(11);
+
+                }
+
+                Console.WriteLine($"You now have {tries} tries left");
+                Console.ReadKey();
+                Console.Clear();
             }
         }
     }
