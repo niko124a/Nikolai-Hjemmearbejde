@@ -1,9 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace GætteSpil
 {
     class Program
     {
+        [Serializable]
+        public class HighScore
+        {
+            public string PlayerName { get; set; }
+            public int Score { get; set; }
+        }
 
         public static void Gættespil()
         {
@@ -66,6 +76,27 @@ namespace GætteSpil
         public static string playerGuess = Console.ReadLine();
         static void Main(string[] args)
         {
+            var highScores = new List<HighScore>()
+            {
+                new HighScore { PlayerName = "Helen", Score = 1000 },
+                new HighScore { PlayerName = "Christophe", Score = 2000 },
+                new HighScore { PlayerName = "Ruben", Score = 3000 },
+                new HighScore { PlayerName = "John", Score = 4000 },
+                new HighScore { PlayerName = "The Last Starfighter", Score = 5000 }
+            };
+            using (var fileStream = new FileStream(@"C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\Highscores.txt", FileMode.Create, FileAccess.Write))
+            {
+                var formatter = new BinaryFormatter();
+                formatter.Serialize(fileStream, highScores);
+            }
+            using (var fileStream = new FileStream(@"C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\GætteSpil\Highscores.txt", FileMode.Open, FileAccess.Read))
+            {
+                var formatter = new BinaryFormatter();
+                highScores = (List<HighScore>)formatter.Deserialize(fileStream);
+            }
+            var sortedScores = highScores.OrderByDescending(s => s.Score).ToList();
+
+
             while (true)
             {
 
@@ -75,7 +106,7 @@ namespace GætteSpil
                 int Tries = 3;
                 Console.Clear();
                 Console.WriteLine("I'm thinking of a number between 0 and 10.");
-                
+
 
                 while (Tries != 0)
                 {
@@ -107,7 +138,7 @@ namespace GætteSpil
 
                     if (Tries == 0)
                     {
-                        Console.WriteLine("");
+                        Console.WriteLine(" You have used all your tries, better luck next time.");
                     }
                 }
             }
