@@ -16,7 +16,7 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Menukort());
         }
     }
 }

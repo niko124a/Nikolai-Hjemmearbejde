@@ -10,18 +10,26 @@ using System.Windows.Forms;
 
 namespace Uge_14___miniprojekt__Pizzaria_
 {
-    public partial class Form1 : Form
+    public partial class Menukort : Form
     {
-        public Form1()
+        public Menukort()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buy1_Click(object sender, EventArgs e)
         {
-            Menukort menukort = new Menukort();
-            this.Hide();
-            menukort.Show();
+            
+        }
+
+        private void buy2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buy3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

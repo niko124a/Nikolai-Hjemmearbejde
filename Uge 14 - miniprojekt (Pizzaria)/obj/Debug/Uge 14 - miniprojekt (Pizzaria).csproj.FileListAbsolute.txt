@@ -1,0 +1,10 @@
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\bin\Debug\Uge 14 - miniprojekt (Pizzaria).exe.config
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\bin\Debug\Uge 14 - miniprojekt (Pizzaria).exe
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\bin\Debug\Uge 14 - miniprojekt (Pizzaria).pdb
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\obj\Debug\Uge 14 - miniprojekt (Pizzaria).csprojAssemblyReference.cache
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\obj\Debug\Uge_14___miniprojekt__Pizzaria_.Form1.resources
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\obj\Debug\Uge_14___miniprojekt__Pizzaria_.Menukort.resources
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\obj\Debug\Uge_14___miniprojekt__Pizzaria_.Properties.Resources.resources
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\obj\Debug\Uge 14 - miniprojekt (Pizzaria).csproj.GenerateResource.cache
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\obj\Debug\Uge 14 - miniprojekt (Pizzaria).exe
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\obj\Debug\Uge 14 - miniprojekt (Pizzaria).pdb
