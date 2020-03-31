@@ -8,3 +8,4 @@ C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniproj
 C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\obj\Debug\Uge 14 - miniprojekt (Pizzaria).csproj.GenerateResource.cache
 C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\obj\Debug\Uge 14 - miniprojekt (Pizzaria).exe
 C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\obj\Debug\Uge 14 - miniprojekt (Pizzaria).pdb
+C:\Users\Nikolai Jensen\Documents\GitHub\Nikolai-Hjemmearbejde\Uge 14 - miniprojekt (Pizzaria)\obj\Debug\Uge_14___miniprojekt__Pizzaria_.Ingredienser.resources

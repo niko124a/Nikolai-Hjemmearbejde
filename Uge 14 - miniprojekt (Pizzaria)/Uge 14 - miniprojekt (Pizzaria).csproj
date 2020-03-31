@@ -52,16 +52,26 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ingredienser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingredienser.Designer.cs">
+      <DependentUpon>Ingredienser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menukort.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menukort.Designer.cs">
       <DependentUpon>Menukort.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pizza.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingredienser.resx">
+      <DependentUpon>Ingredienser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menukort.resx">
       <DependentUpon>Menukort.cs</DependentUpon>

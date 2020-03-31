@@ -40,21 +40,18 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.choice1 = new System.Windows.Forms.Button();
+            this.alm1 = new System.Windows.Forms.RadioButton();
+            this.alm2 = new System.Windows.Forms.RadioButton();
+            this.alm3 = new System.Windows.Forms.RadioButton();
+            this.fam1 = new System.Windows.Forms.RadioButton();
+            this.fam2 = new System.Windows.Forms.RadioButton();
+            this.fam3 = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.buy1 = new System.Windows.Forms.Button();
-            this.buy2 = new System.Windows.Forms.Button();
-            this.buy3 = new System.Windows.Forms.Button();
-            this.alm1 = new System.Windows.Forms.CheckBox();
-            this.fam1 = new System.Windows.Forms.CheckBox();
-            this.alm2 = new System.Windows.Forms.CheckBox();
-            this.fam2 = new System.Windows.Forms.CheckBox();
-            this.alm3 = new System.Windows.Forms.CheckBox();
-            this.fam3 = new System.Windows.Forms.CheckBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -73,9 +70,9 @@
             this.label2.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(55, 193);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 27);
+            this.label2.Size = new System.Drawing.Size(154, 27);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Margarita";
+            this.label2.Text = "Margherita";
             // 
             // label3
             // 
@@ -103,9 +100,9 @@
             this.label5.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(55, 241);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 27);
+            this.label5.Size = new System.Drawing.Size(137, 27);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Proscitto";
+            this.label5.Text = "Prosciutto";
             // 
             // label6
             // 
@@ -123,9 +120,9 @@
             this.label7.Font = new System.Drawing.Font("Lucida Calligraphy", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(57, 268);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 15);
+            this.label7.Size = new System.Drawing.Size(176, 15);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Tomat, Ost, Skinke";
+            this.label7.Text = "Tomat, Ost, Parmaskinke";
             // 
             // label8
             // 
@@ -177,173 +174,160 @@
             this.label12.TabIndex = 11;
             this.label12.Text = "Familie";
             // 
-            // label13
+            // choice1
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(310, 194);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 25);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "70 kr.";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(310, 242);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 25);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "70 kr.";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(310, 290);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(55, 25);
-            this.label15.TabIndex = 14;
-            this.label15.Text = "70 kr.";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(413, 194);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(64, 25);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "120 kr.";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(413, 242);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(64, 25);
-            this.label17.TabIndex = 16;
-            this.label17.Text = "120 kr.";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(413, 290);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(64, 25);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "120 kr.";
-            // 
-            // buy1
-            // 
-            this.buy1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buy1.Location = new System.Drawing.Point(543, 191);
-            this.buy1.Name = "buy1";
-            this.buy1.Size = new System.Drawing.Size(60, 29);
-            this.buy1.TabIndex = 19;
-            this.buy1.Text = "Køb";
-            this.buy1.UseVisualStyleBackColor = true;
-            this.buy1.Click += new System.EventHandler(this.buy1_Click);
-            // 
-            // buy2
-            // 
-            this.buy2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buy2.Location = new System.Drawing.Point(543, 238);
-            this.buy2.Name = "buy2";
-            this.buy2.Size = new System.Drawing.Size(60, 29);
-            this.buy2.TabIndex = 20;
-            this.buy2.Text = "Køb";
-            this.buy2.UseVisualStyleBackColor = true;
-            this.buy2.Click += new System.EventHandler(this.buy2_Click);
-            // 
-            // buy3
-            // 
-            this.buy3.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buy3.Location = new System.Drawing.Point(543, 286);
-            this.buy3.Name = "buy3";
-            this.buy3.Size = new System.Drawing.Size(60, 29);
-            this.buy3.TabIndex = 21;
-            this.buy3.Text = "Køb";
-            this.buy3.UseVisualStyleBackColor = true;
-            this.buy3.Click += new System.EventHandler(this.buy3_Click);
+            this.choice1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.choice1.Location = new System.Drawing.Point(543, 190);
+            this.choice1.Name = "choice1";
+            this.choice1.Size = new System.Drawing.Size(60, 33);
+            this.choice1.TabIndex = 19;
+            this.choice1.Text = "Vælg";
+            this.choice1.UseVisualStyleBackColor = true;
+            this.choice1.Click += new System.EventHandler(this.choice1_Click);
             // 
             // alm1
             // 
             this.alm1.AutoSize = true;
-            this.alm1.Location = new System.Drawing.Point(371, 203);
+            this.alm1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alm1.Location = new System.Drawing.Point(315, 197);
             this.alm1.Name = "alm1";
-            this.alm1.Size = new System.Drawing.Size(15, 14);
-            this.alm1.TabIndex = 22;
+            this.alm1.Size = new System.Drawing.Size(73, 29);
+            this.alm1.TabIndex = 29;
+            this.alm1.TabStop = true;
+            this.alm1.Text = "69 kr.";
             this.alm1.UseVisualStyleBackColor = true;
-            // 
-            // fam1
-            // 
-            this.fam1.AutoSize = true;
-            this.fam1.Location = new System.Drawing.Point(483, 203);
-            this.fam1.Name = "fam1";
-            this.fam1.Size = new System.Drawing.Size(15, 14);
-            this.fam1.TabIndex = 23;
-            this.fam1.UseVisualStyleBackColor = true;
             // 
             // alm2
             // 
             this.alm2.AutoSize = true;
-            this.alm2.Location = new System.Drawing.Point(371, 251);
+            this.alm2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alm2.Location = new System.Drawing.Point(315, 244);
             this.alm2.Name = "alm2";
-            this.alm2.Size = new System.Drawing.Size(15, 14);
-            this.alm2.TabIndex = 24;
+            this.alm2.Size = new System.Drawing.Size(73, 29);
+            this.alm2.TabIndex = 30;
+            this.alm2.TabStop = true;
+            this.alm2.Text = "69 kr.";
             this.alm2.UseVisualStyleBackColor = true;
-            // 
-            // fam2
-            // 
-            this.fam2.AutoSize = true;
-            this.fam2.Location = new System.Drawing.Point(483, 251);
-            this.fam2.Name = "fam2";
-            this.fam2.Size = new System.Drawing.Size(15, 14);
-            this.fam2.TabIndex = 25;
-            this.fam2.UseVisualStyleBackColor = true;
             // 
             // alm3
             // 
             this.alm3.AutoSize = true;
-            this.alm3.Location = new System.Drawing.Point(371, 299);
+            this.alm3.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alm3.Location = new System.Drawing.Point(315, 292);
             this.alm3.Name = "alm3";
-            this.alm3.Size = new System.Drawing.Size(15, 14);
-            this.alm3.TabIndex = 26;
+            this.alm3.Size = new System.Drawing.Size(73, 29);
+            this.alm3.TabIndex = 31;
+            this.alm3.TabStop = true;
+            this.alm3.Text = "69 kr.";
             this.alm3.UseVisualStyleBackColor = true;
+            // 
+            // fam1
+            // 
+            this.fam1.AutoSize = true;
+            this.fam1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fam1.Location = new System.Drawing.Point(418, 197);
+            this.fam1.Name = "fam1";
+            this.fam1.Size = new System.Drawing.Size(82, 29);
+            this.fam1.TabIndex = 32;
+            this.fam1.TabStop = true;
+            this.fam1.Text = "100 kr.";
+            this.fam1.UseVisualStyleBackColor = true;
+            // 
+            // fam2
+            // 
+            this.fam2.AutoSize = true;
+            this.fam2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fam2.Location = new System.Drawing.Point(418, 244);
+            this.fam2.Name = "fam2";
+            this.fam2.Size = new System.Drawing.Size(82, 29);
+            this.fam2.TabIndex = 33;
+            this.fam2.TabStop = true;
+            this.fam2.Text = "100 kr.";
+            this.fam2.UseVisualStyleBackColor = true;
             // 
             // fam3
             // 
             this.fam3.AutoSize = true;
-            this.fam3.Location = new System.Drawing.Point(483, 299);
+            this.fam3.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fam3.Location = new System.Drawing.Point(418, 292);
             this.fam3.Name = "fam3";
-            this.fam3.Size = new System.Drawing.Size(15, 14);
-            this.fam3.TabIndex = 27;
+            this.fam3.Size = new System.Drawing.Size(82, 29);
+            this.fam3.TabIndex = 34;
+            this.fam3.TabStop = true;
+            this.fam3.Text = "100 kr.";
             this.fam3.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(23, 338);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(26, 25);
+            this.label13.TabIndex = 37;
+            this.label13.Text = "4.";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Lucida Calligraphy", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(57, 364);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(143, 15);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "vælg 4 ingredienser";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(55, 337);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(112, 27);
+            this.label15.TabIndex = 35;
+            this.label15.Text = "Lav selv";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(418, 340);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(82, 29);
+            this.radioButton1.TabIndex = 39;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "100 kr.";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(315, 340);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(73, 29);
+            this.radioButton2.TabIndex = 38;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "69 kr.";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // Menukort
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 616);
-            this.Controls.Add(this.fam3);
-            this.Controls.Add(this.alm3);
-            this.Controls.Add(this.fam2);
-            this.Controls.Add(this.alm2);
-            this.Controls.Add(this.fam1);
-            this.Controls.Add(this.alm1);
-            this.Controls.Add(this.buy3);
-            this.Controls.Add(this.buy2);
-            this.Controls.Add(this.buy1);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
+            this.ClientSize = new System.Drawing.Size(1075, 658);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.fam3);
+            this.Controls.Add(this.fam2);
+            this.Controls.Add(this.fam1);
+            this.Controls.Add(this.alm3);
+            this.Controls.Add(this.alm2);
+            this.Controls.Add(this.alm1);
+            this.Controls.Add(this.choice1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -379,20 +363,17 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button choice1;
+        private System.Windows.Forms.RadioButton alm1;
+        private System.Windows.Forms.RadioButton alm2;
+        private System.Windows.Forms.RadioButton alm3;
+        private System.Windows.Forms.RadioButton fam1;
+        private System.Windows.Forms.RadioButton fam2;
+        private System.Windows.Forms.RadioButton fam3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button buy1;
-        private System.Windows.Forms.Button buy2;
-        private System.Windows.Forms.Button buy3;
-        private System.Windows.Forms.CheckBox alm1;
-        private System.Windows.Forms.CheckBox fam1;
-        private System.Windows.Forms.CheckBox alm2;
-        private System.Windows.Forms.CheckBox fam2;
-        private System.Windows.Forms.CheckBox alm3;
-        private System.Windows.Forms.CheckBox fam3;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }
