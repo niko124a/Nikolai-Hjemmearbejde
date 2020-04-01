@@ -4,6 +4,9 @@ namespace Uge_14___miniprojekt__Pizzaria_
 {
     public partial class Ingredienser : Form
     {
+        public Pizza pizza;
+        public Menukort menukort;
+        public Ingredienser ingredienser;
         public void ShowPizzaInfo()
         {
             pizzaIDLabel.Text = $"{pizza.Id.ToString()}.";
@@ -11,15 +14,22 @@ namespace Uge_14___miniprojekt__Pizzaria_
             pizzaInfoLabel.Text = $"{pizza.Info}";
         }
 
-
-        public Pizza pizza;
-        public Ingredienser(Pizza pizza)
+        public void CreateOrder()
         {
-            InitializeComponent();
-            this.pizza = pizza;
-            ShowPizzaInfo();
-
+            if (eggCheckBox.Checked)
+            {
+                ordreLabel.Text += $"Æg  +5 {menukort.valuta}";
+            }
         }
 
+        public Ingredienser(Menukort menukort)
+        {
+            InitializeComponent();
+            this.pizza = menukort.pizza;
+            this.menukort = menukort;
+            ShowPizzaInfo();
+            totalPriceLabel.Text = menukort.totalPrice.ToString();
+            CreateOrder();
+        }
     }
 }

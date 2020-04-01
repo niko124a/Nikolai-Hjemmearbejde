@@ -50,8 +50,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.fam4 = new System.Windows.Forms.RadioButton();
+            this.alm4 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -287,37 +287,37 @@
             this.label15.TabIndex = 35;
             this.label15.Text = "Lav selv";
             // 
-            // radioButton1
+            // fam4
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(418, 340);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(82, 29);
-            this.radioButton1.TabIndex = 39;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "100 kr.";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.fam4.AutoSize = true;
+            this.fam4.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fam4.Location = new System.Drawing.Point(418, 340);
+            this.fam4.Name = "fam4";
+            this.fam4.Size = new System.Drawing.Size(82, 29);
+            this.fam4.TabIndex = 39;
+            this.fam4.TabStop = true;
+            this.fam4.Text = "100 kr.";
+            this.fam4.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // alm4
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(315, 340);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(73, 29);
-            this.radioButton2.TabIndex = 38;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "69 kr.";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.alm4.AutoSize = true;
+            this.alm4.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alm4.Location = new System.Drawing.Point(315, 340);
+            this.alm4.Name = "alm4";
+            this.alm4.Size = new System.Drawing.Size(73, 29);
+            this.alm4.TabIndex = 38;
+            this.alm4.TabStop = true;
+            this.alm4.Text = "69 kr.";
+            this.alm4.UseVisualStyleBackColor = true;
             // 
             // Menukort
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1075, 658);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.fam4);
+            this.Controls.Add(this.alm4);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
@@ -373,7 +373,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton fam4;
+        private System.Windows.Forms.RadioButton alm4;
     }
 }
