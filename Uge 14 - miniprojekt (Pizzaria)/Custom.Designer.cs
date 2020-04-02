@@ -106,6 +106,7 @@
             this.ostCheckBox.Tag = "ingrediens";
             this.ostCheckBox.Text = "Ost";
             this.ostCheckBox.UseVisualStyleBackColor = true;
+            this.ostCheckBox.CheckedChanged += new System.EventHandler(this.ostCheckBox_CheckedChanged);
             // 
             // tunPriceLabel
             // 
@@ -380,6 +381,7 @@
             this.kebabCheckBox.Tag = "ingrediens";
             this.kebabCheckBox.Text = "Kebab";
             this.kebabCheckBox.UseVisualStyleBackColor = true;
+            this.kebabCheckBox.CheckedChanged += new System.EventHandler(this.kebabCheckBox_CheckedChanged);
             // 
             // tunCheckBox
             // 
@@ -392,6 +394,7 @@
             this.tunCheckBox.Tag = "ingrediens";
             this.tunCheckBox.Text = "Tun";
             this.tunCheckBox.UseVisualStyleBackColor = true;
+            this.tunCheckBox.CheckedChanged += new System.EventHandler(this.tunCheckBox_CheckedChanged);
             // 
             // tomatskiverCheckBox
             // 
@@ -404,6 +407,7 @@
             this.tomatskiverCheckBox.Tag = "ingrediens";
             this.tomatskiverCheckBox.Text = "Tomatskiver";
             this.tomatskiverCheckBox.UseVisualStyleBackColor = true;
+            this.tomatskiverCheckBox.CheckedChanged += new System.EventHandler(this.tomatskiverCheckBox_CheckedChanged);
             // 
             // tabascoCheckBox
             // 
@@ -416,6 +420,7 @@
             this.tabascoCheckBox.Tag = "ingrediens";
             this.tabascoCheckBox.Text = "Tabasco";
             this.tabascoCheckBox.UseVisualStyleBackColor = true;
+            this.tabascoCheckBox.CheckedChanged += new System.EventHandler(this.tabascoCheckBox_CheckedChanged);
             // 
             // skinkeCheckBox
             // 
@@ -428,6 +433,7 @@
             this.skinkeCheckBox.Tag = "ingrediens";
             this.skinkeCheckBox.Text = "Skinke";
             this.skinkeCheckBox.UseVisualStyleBackColor = true;
+            this.skinkeCheckBox.CheckedChanged += new System.EventHandler(this.skinkeCheckBox_CheckedChanged);
             // 
             // salatCheckBox
             // 
@@ -440,6 +446,7 @@
             this.salatCheckBox.Tag = "ingrediens";
             this.salatCheckBox.Text = "Salat";
             this.salatCheckBox.UseVisualStyleBackColor = true;
+            this.salatCheckBox.CheckedChanged += new System.EventHandler(this.salatCheckBox_CheckedChanged);
             // 
             // rejerCheckBox
             // 
@@ -452,6 +459,7 @@
             this.rejerCheckBox.Tag = "ingrediens";
             this.rejerCheckBox.Text = "Rejer";
             this.rejerCheckBox.UseVisualStyleBackColor = true;
+            this.rejerCheckBox.CheckedChanged += new System.EventHandler(this.rejerCheckBox_CheckedChanged);
             // 
             // pepperoniCheckBox
             // 
@@ -464,6 +472,7 @@
             this.pepperoniCheckBox.Tag = "ingrediens";
             this.pepperoniCheckBox.Text = "Pepperoni";
             this.pepperoniCheckBox.UseVisualStyleBackColor = true;
+            this.pepperoniCheckBox.CheckedChanged += new System.EventHandler(this.pepperoniCheckBox_CheckedChanged);
             // 
             // paprikaCheckBox
             // 
@@ -476,6 +485,7 @@
             this.paprikaCheckBox.Tag = "ingrediens";
             this.paprikaCheckBox.Text = "Paprika";
             this.paprikaCheckBox.UseVisualStyleBackColor = true;
+            this.paprikaCheckBox.CheckedChanged += new System.EventHandler(this.paprikaCheckBox_CheckedChanged);
             // 
             // løgCheckBox
             // 
@@ -488,6 +498,7 @@
             this.løgCheckBox.Tag = "ingrediens";
             this.løgCheckBox.Text = "Løg";
             this.løgCheckBox.UseVisualStyleBackColor = true;
+            this.løgCheckBox.CheckedChanged += new System.EventHandler(this.løgCheckBox_CheckedChanged);
             // 
             // kyllingCheckBox
             // 
@@ -500,6 +511,7 @@
             this.kyllingCheckBox.Tag = "ingrediens";
             this.kyllingCheckBox.Text = "Kylling";
             this.kyllingCheckBox.UseVisualStyleBackColor = true;
+            this.kyllingCheckBox.CheckedChanged += new System.EventHandler(this.kyllingCheckBox_CheckedChanged);
             // 
             // hvidløgCheckBox
             // 
@@ -512,6 +524,7 @@
             this.hvidløgCheckBox.Tag = "ingrediens";
             this.hvidløgCheckBox.Text = "Hvidløg";
             this.hvidløgCheckBox.UseVisualStyleBackColor = true;
+            this.hvidløgCheckBox.CheckedChanged += new System.EventHandler(this.hvidløgCheckBox_CheckedChanged);
             // 
             // oksekødCheckBox
             // 
@@ -524,6 +537,7 @@
             this.oksekødCheckBox.Tag = "ingrediens";
             this.oksekødCheckBox.Text = "Hakket oksekød";
             this.oksekødCheckBox.UseVisualStyleBackColor = true;
+            this.oksekødCheckBox.CheckedChanged += new System.EventHandler(this.oksekødCheckBox_CheckedChanged);
             // 
             // dressingCheckBox
             // 
@@ -536,6 +550,7 @@
             this.dressingCheckBox.Tag = "ingrediens";
             this.dressingCheckBox.Text = "Dressing";
             this.dressingCheckBox.UseVisualStyleBackColor = true;
+            this.dressingCheckBox.CheckedChanged += new System.EventHandler(this.dressingCheckBox_CheckedChanged);
             // 
             // chiliCheckBox
             // 
@@ -548,6 +563,7 @@
             this.chiliCheckBox.Tag = "ingrediens";
             this.chiliCheckBox.Text = "Chili";
             this.chiliCheckBox.UseVisualStyleBackColor = true;
+            this.chiliCheckBox.CheckedChanged += new System.EventHandler(this.chiliCheckBox_CheckedChanged);
             // 
             // champignonCheckBox
             // 
@@ -560,6 +576,7 @@
             this.champignonCheckBox.Tag = "ingrediens";
             this.champignonCheckBox.Text = "Champignon";
             this.champignonCheckBox.UseVisualStyleBackColor = true;
+            this.champignonCheckBox.CheckedChanged += new System.EventHandler(this.champignonCheckBox_CheckedChanged);
             // 
             // baconCheckBox
             // 
@@ -572,6 +589,7 @@
             this.baconCheckBox.Tag = "ingrediens";
             this.baconCheckBox.Text = "Bacon";
             this.baconCheckBox.UseVisualStyleBackColor = true;
+            this.baconCheckBox.CheckedChanged += new System.EventHandler(this.baconCheckBox_CheckedChanged);
             // 
             // aspargesCheckBox
             // 
@@ -584,6 +602,7 @@
             this.aspargesCheckBox.Tag = "ingrediens";
             this.aspargesCheckBox.Text = "Asparges";
             this.aspargesCheckBox.UseVisualStyleBackColor = true;
+            this.aspargesCheckBox.CheckedChanged += new System.EventHandler(this.aspargesCheckBox_CheckedChanged);
             // 
             // ananasCheckBox
             // 
@@ -596,6 +615,7 @@
             this.ananasCheckBox.Tag = "ingrediens";
             this.ananasCheckBox.Text = "Ananas";
             this.ananasCheckBox.UseVisualStyleBackColor = true;
+            this.ananasCheckBox.CheckedChanged += new System.EventHandler(this.ananasCheckBox_CheckedChanged);
             // 
             // agurkCheckBox
             // 
@@ -608,6 +628,7 @@
             this.agurkCheckBox.Tag = "ingrediens";
             this.agurkCheckBox.Text = "Agurk";
             this.agurkCheckBox.UseVisualStyleBackColor = true;
+            this.agurkCheckBox.CheckedChanged += new System.EventHandler(this.agurkCheckBox_CheckedChanged);
             // 
             // eggCheckBox
             // 
@@ -620,6 +641,7 @@
             this.eggCheckBox.Tag = "ingrediens";
             this.eggCheckBox.Text = "Æg";
             this.eggCheckBox.UseVisualStyleBackColor = true;
+            this.eggCheckBox.CheckedChanged += new System.EventHandler(this.eggCheckBox_CheckedChanged);
             // 
             // label2
             // 

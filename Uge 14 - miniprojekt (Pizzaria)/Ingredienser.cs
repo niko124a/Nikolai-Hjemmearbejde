@@ -11,7 +11,7 @@ namespace Uge_14___miniprojekt__Pizzaria_
         public void ShowPizzaInfo()
         {
             pizzaIDLabel.Text = $"{pizza.Id.ToString()}.";
-            pizzaNameLabel.Text = $"{pizza.Name}";
+            pizzaNameLabel.Text = $"{pizza.Name} {pizza.size}";
             pizzaInfoLabel.Text = $"{pizza.Info}";
             valgtPizzaLabel.Text = $"{pizza.Name} {pizza.size}";
         }
@@ -30,16 +30,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (eggCheckBox.Checked)
             {
-                ordreLabel.Text += $"Æg  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Æg";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                 menukort.totalPrice += 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!eggCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Æg  +5 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Æg");
             }
         }
 
@@ -47,16 +50,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (agurkCheckBox.Checked)
             {
-                ordreLabel.Text += $"Agurk  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Agurk";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                 menukort.totalPrice += 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!agurkCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Agurk  +5 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Agurk");
             }
         }
 

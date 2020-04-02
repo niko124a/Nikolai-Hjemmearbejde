@@ -279,9 +279,9 @@
             this.label14.Font = new System.Drawing.Font("Lucida Calligraphy", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(57, 364);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(143, 15);
+            this.label14.Size = new System.Drawing.Size(196, 15);
             this.label14.TabIndex = 36;
-            this.label14.Text = "vælg 4 ingredienser";
+            this.label14.Text = "Tomat, Vælg 4 ingredienser";
             // 
             // label15
             // 
