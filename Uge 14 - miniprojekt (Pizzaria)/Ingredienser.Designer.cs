@@ -55,6 +55,7 @@
             this.tunCheckBox = new System.Windows.Forms.CheckBox();
             this.kebabCheckBox = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.valgtPizzaLabel = new System.Windows.Forms.Label();
             this.ordreLabel = new System.Windows.Forms.Label();
             this.totalPriceLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -82,6 +83,7 @@
             this.tunPriceLabel = new System.Windows.Forms.Label();
             this.ostCheckBox = new System.Windows.Forms.CheckBox();
             this.ostPriceLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +92,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(312, 9);
+            this.label1.Location = new System.Drawing.Point(468, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(224, 43);
             this.label1.TabIndex = 0;
@@ -148,6 +150,7 @@
             this.eggCheckBox.Tag = "ingrediens";
             this.eggCheckBox.Text = "Æg";
             this.eggCheckBox.UseVisualStyleBackColor = true;
+            this.eggCheckBox.CheckedChanged += new System.EventHandler(this.eggCheckBox_CheckedChanged);
             // 
             // agurkCheckBox
             // 
@@ -160,6 +163,7 @@
             this.agurkCheckBox.Tag = "ingrediens";
             this.agurkCheckBox.Text = "Agurk";
             this.agurkCheckBox.UseVisualStyleBackColor = true;
+            this.agurkCheckBox.CheckedChanged += new System.EventHandler(this.agurkCheckBox_CheckedChanged);
             // 
             // ananasCheckBox
             // 
@@ -172,6 +176,7 @@
             this.ananasCheckBox.Tag = "ingrediens";
             this.ananasCheckBox.Text = "Ananas";
             this.ananasCheckBox.UseVisualStyleBackColor = true;
+            this.ananasCheckBox.CheckedChanged += new System.EventHandler(this.ananasCheckBox_CheckedChanged);
             // 
             // aspargesCheckBox
             // 
@@ -184,6 +189,7 @@
             this.aspargesCheckBox.Tag = "ingrediens";
             this.aspargesCheckBox.Text = "Asparges";
             this.aspargesCheckBox.UseVisualStyleBackColor = true;
+            this.aspargesCheckBox.CheckedChanged += new System.EventHandler(this.aspargesCheckBox_CheckedChanged);
             // 
             // baconCheckBox
             // 
@@ -196,6 +202,7 @@
             this.baconCheckBox.Tag = "ingrediens";
             this.baconCheckBox.Text = "Bacon";
             this.baconCheckBox.UseVisualStyleBackColor = true;
+            this.baconCheckBox.CheckedChanged += new System.EventHandler(this.baconCheckBox_CheckedChanged);
             // 
             // champignonCheckBox
             // 
@@ -208,6 +215,7 @@
             this.champignonCheckBox.Tag = "ingrediens";
             this.champignonCheckBox.Text = "Champignon";
             this.champignonCheckBox.UseVisualStyleBackColor = true;
+            this.champignonCheckBox.CheckedChanged += new System.EventHandler(this.champignonCheckBox_CheckedChanged);
             // 
             // chiliCheckBox
             // 
@@ -220,6 +228,7 @@
             this.chiliCheckBox.Tag = "ingrediens";
             this.chiliCheckBox.Text = "Chili";
             this.chiliCheckBox.UseVisualStyleBackColor = true;
+            this.chiliCheckBox.CheckedChanged += new System.EventHandler(this.chiliCheckBox_CheckedChanged);
             // 
             // dressingCheckBox
             // 
@@ -232,6 +241,7 @@
             this.dressingCheckBox.Tag = "ingrediens";
             this.dressingCheckBox.Text = "Dressing";
             this.dressingCheckBox.UseVisualStyleBackColor = true;
+            this.dressingCheckBox.CheckedChanged += new System.EventHandler(this.dressingCheckBox_CheckedChanged);
             // 
             // oksekødCheckBox
             // 
@@ -244,6 +254,7 @@
             this.oksekødCheckBox.Tag = "ingrediens";
             this.oksekødCheckBox.Text = "Hakket oksekød";
             this.oksekødCheckBox.UseVisualStyleBackColor = true;
+            this.oksekødCheckBox.CheckedChanged += new System.EventHandler(this.oksekødCheckBox_CheckedChanged);
             // 
             // hvidløgCheckBox
             // 
@@ -256,6 +267,7 @@
             this.hvidløgCheckBox.Tag = "ingrediens";
             this.hvidløgCheckBox.Text = "Hvidløg";
             this.hvidløgCheckBox.UseVisualStyleBackColor = true;
+            this.hvidløgCheckBox.CheckedChanged += new System.EventHandler(this.hvidløgCheckBox_CheckedChanged);
             // 
             // kyllingCheckBox
             // 
@@ -268,6 +280,7 @@
             this.kyllingCheckBox.Tag = "ingrediens";
             this.kyllingCheckBox.Text = "Kylling";
             this.kyllingCheckBox.UseVisualStyleBackColor = true;
+            this.kyllingCheckBox.CheckedChanged += new System.EventHandler(this.kyllingCheckBox_CheckedChanged);
             // 
             // løgCheckBox
             // 
@@ -280,6 +293,7 @@
             this.løgCheckBox.Tag = "ingrediens";
             this.løgCheckBox.Text = "Løg";
             this.løgCheckBox.UseVisualStyleBackColor = true;
+            this.løgCheckBox.CheckedChanged += new System.EventHandler(this.løgCheckBox_CheckedChanged);
             // 
             // paprikaCheckBox
             // 
@@ -292,6 +306,7 @@
             this.paprikaCheckBox.Tag = "ingrediens";
             this.paprikaCheckBox.Text = "Paprika";
             this.paprikaCheckBox.UseVisualStyleBackColor = true;
+            this.paprikaCheckBox.CheckedChanged += new System.EventHandler(this.paprikaCheckBox_CheckedChanged);
             // 
             // pepperoniCheckBox
             // 
@@ -304,6 +319,7 @@
             this.pepperoniCheckBox.Tag = "ingrediens";
             this.pepperoniCheckBox.Text = "Pepperoni";
             this.pepperoniCheckBox.UseVisualStyleBackColor = true;
+            this.pepperoniCheckBox.CheckedChanged += new System.EventHandler(this.pepperoniCheckBox_CheckedChanged);
             // 
             // rejerCheckBox
             // 
@@ -316,6 +332,7 @@
             this.rejerCheckBox.Tag = "ingrediens";
             this.rejerCheckBox.Text = "Rejer";
             this.rejerCheckBox.UseVisualStyleBackColor = true;
+            this.rejerCheckBox.CheckedChanged += new System.EventHandler(this.rejerCheckBox_CheckedChanged);
             // 
             // salatCheckBox
             // 
@@ -328,6 +345,7 @@
             this.salatCheckBox.Tag = "ingrediens";
             this.salatCheckBox.Text = "Salat";
             this.salatCheckBox.UseVisualStyleBackColor = true;
+            this.salatCheckBox.CheckedChanged += new System.EventHandler(this.salatCheckBox_CheckedChanged);
             // 
             // skinkeCheckBox
             // 
@@ -340,6 +358,7 @@
             this.skinkeCheckBox.Tag = "ingrediens";
             this.skinkeCheckBox.Text = "Skinke";
             this.skinkeCheckBox.UseVisualStyleBackColor = true;
+            this.skinkeCheckBox.CheckedChanged += new System.EventHandler(this.skinkeCheckBox_CheckedChanged);
             // 
             // tabascoCheckBox
             // 
@@ -352,6 +371,7 @@
             this.tabascoCheckBox.Tag = "ingrediens";
             this.tabascoCheckBox.Text = "Tabasco";
             this.tabascoCheckBox.UseVisualStyleBackColor = true;
+            this.tabascoCheckBox.CheckedChanged += new System.EventHandler(this.tabascoCheckBox_CheckedChanged);
             // 
             // tomatskiverCheckBox
             // 
@@ -364,6 +384,7 @@
             this.tomatskiverCheckBox.Tag = "ingrediens";
             this.tomatskiverCheckBox.Text = "Tomatskiver";
             this.tomatskiverCheckBox.UseVisualStyleBackColor = true;
+            this.tomatskiverCheckBox.CheckedChanged += new System.EventHandler(this.tomatskiverCheckBox_CheckedChanged);
             // 
             // tunCheckBox
             // 
@@ -376,6 +397,7 @@
             this.tunCheckBox.Tag = "ingrediens";
             this.tunCheckBox.Text = "Tun";
             this.tunCheckBox.UseVisualStyleBackColor = true;
+            this.tunCheckBox.CheckedChanged += new System.EventHandler(this.tunCheckBox_CheckedChanged);
             // 
             // kebabCheckBox
             // 
@@ -388,24 +410,36 @@
             this.kebabCheckBox.Tag = "ingrediens";
             this.kebabCheckBox.Text = "Kebab";
             this.kebabCheckBox.UseVisualStyleBackColor = true;
+            this.kebabCheckBox.CheckedChanged += new System.EventHandler(this.kebabCheckBox_CheckedChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightBlue;
+            this.panel1.Controls.Add(this.valgtPizzaLabel);
             this.panel1.Controls.Add(this.ordreLabel);
             this.panel1.Controls.Add(this.totalPriceLabel);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(441, 138);
+            this.panel1.Location = new System.Drawing.Point(752, 95);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(440, 508);
             this.panel1.TabIndex = 26;
+            // 
+            // valgtPizzaLabel
+            // 
+            this.valgtPizzaLabel.AutoSize = true;
+            this.valgtPizzaLabel.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valgtPizzaLabel.Location = new System.Drawing.Point(135, 37);
+            this.valgtPizzaLabel.Name = "valgtPizzaLabel";
+            this.valgtPizzaLabel.Size = new System.Drawing.Size(101, 22);
+            this.valgtPizzaLabel.TabIndex = 31;
+            this.valgtPizzaLabel.Text = "Valgt pizza";
             // 
             // ordreLabel
             // 
             this.ordreLabel.AutoSize = true;
             this.ordreLabel.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ordreLabel.Location = new System.Drawing.Point(138, 43);
+            this.ordreLabel.Location = new System.Drawing.Point(137, 81);
             this.ordreLabel.Name = "ordreLabel";
             this.ordreLabel.Size = new System.Drawing.Size(167, 22);
             this.ordreLabel.TabIndex = 30;
@@ -662,6 +696,7 @@
             this.ostCheckBox.Tag = "ingrediens";
             this.ostCheckBox.Text = "Ost";
             this.ostCheckBox.UseVisualStyleBackColor = true;
+            this.ostCheckBox.CheckedChanged += new System.EventHandler(this.ostCheckBox_CheckedChanged);
             // 
             // ostPriceLabel
             // 
@@ -673,11 +708,22 @@
             this.ostPriceLabel.TabIndex = 49;
             this.ostPriceLabel.Text = "2 kr.";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(893, 609);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 44);
+            this.button1.TabIndex = 50;
+            this.button1.Text = "Bestil";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Ingredienser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 658);
+            this.ClientSize = new System.Drawing.Size(1204, 658);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.ostPriceLabel);
             this.Controls.Add(this.ostCheckBox);
             this.Controls.Add(this.tunPriceLabel);
@@ -794,5 +840,7 @@
         private System.Windows.Forms.CheckBox ostCheckBox;
         private System.Windows.Forms.Label ostPriceLabel;
         private System.Windows.Forms.Label ordreLabel;
+        private System.Windows.Forms.Label valgtPizzaLabel;
+        private System.Windows.Forms.Button button1;
     }
 }

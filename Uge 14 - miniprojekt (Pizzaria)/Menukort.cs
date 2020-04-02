@@ -50,6 +50,7 @@ namespace Uge_14___miniprojekt__Pizzaria_
                 return;
 
             totalPrice = (alm1.Checked || alm2.Checked || alm3.Checked) ? Pizza.almPrice : Pizza.famPrice;
+            pizza.size = (alm1.Checked || alm2.Checked || alm3.Checked) ? "Alm." : "Fam.";
 
             if (pizza != Pizza.pizzaCol[3])
                 pizza.ShowIngredienser(this);

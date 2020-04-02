@@ -52,6 +52,12 @@
             this.label15 = new System.Windows.Forms.Label();
             this.fam4 = new System.Windows.Forms.RadioButton();
             this.alm4 = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.valgtPizzaLabel = new System.Windows.Forms.Label();
+            this.totalPriceLabel = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -311,11 +317,64 @@
             this.alm4.Text = "69 kr.";
             this.alm4.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightBlue;
+            this.panel1.Controls.Add(this.valgtPizzaLabel);
+            this.panel1.Controls.Add(this.totalPriceLabel);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Location = new System.Drawing.Point(713, 66);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(440, 508);
+            this.panel1.TabIndex = 40;
+            // 
+            // valgtPizzaLabel
+            // 
+            this.valgtPizzaLabel.AutoSize = true;
+            this.valgtPizzaLabel.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valgtPizzaLabel.Location = new System.Drawing.Point(137, 41);
+            this.valgtPizzaLabel.Name = "valgtPizzaLabel";
+            this.valgtPizzaLabel.Size = new System.Drawing.Size(101, 22);
+            this.valgtPizzaLabel.TabIndex = 31;
+            this.valgtPizzaLabel.Text = "Valgt pizza";
+            // 
+            // totalPriceLabel
+            // 
+            this.totalPriceLabel.AutoSize = true;
+            this.totalPriceLabel.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalPriceLabel.Location = new System.Drawing.Point(278, 480);
+            this.totalPriceLabel.Name = "totalPriceLabel";
+            this.totalPriceLabel.Size = new System.Drawing.Size(24, 28);
+            this.totalPriceLabel.TabIndex = 29;
+            this.totalPriceLabel.Text = "0";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(136, 480);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(136, 28);
+            this.label16.TabIndex = 28;
+            this.label16.Text = "Total Beløb :";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(136, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(134, 28);
+            this.label17.TabIndex = 27;
+            this.label17.Text = "Indkøbskurv";
+            // 
             // Menukort
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1075, 658);
+            this.ClientSize = new System.Drawing.Size(1165, 658);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.fam4);
             this.Controls.Add(this.alm4);
             this.Controls.Add(this.label13);
@@ -344,6 +403,8 @@
             this.Name = "Menukort";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menukort";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,5 +436,10 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.RadioButton fam4;
         private System.Windows.Forms.RadioButton alm4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label valgtPizzaLabel;
+        private System.Windows.Forms.Label totalPriceLabel;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }

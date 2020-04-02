@@ -49,6 +49,7 @@ namespace Uge_14___miniprojekt__Pizzaria_
         public string Info = "";
         public static int almPrice = 69;
         public static int famPrice = 100;
+        public string size = "";
 
         public static Pizza[] pizzaCol =
         {
