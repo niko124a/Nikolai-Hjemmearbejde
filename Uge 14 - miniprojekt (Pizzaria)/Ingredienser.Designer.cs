@@ -84,6 +84,8 @@
             this.ostCheckBox = new System.Windows.Forms.CheckBox();
             this.ostPriceLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.sodavandComboBox = new System.Windows.Forms.ComboBox();
+            this.bundComboBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -718,11 +720,43 @@
             this.button1.Text = "Bestil";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // sodavandComboBox
+            // 
+            this.sodavandComboBox.FormattingEnabled = true;
+            this.sodavandComboBox.Items.AddRange(new object[] {
+            "Coca Cola",
+            "Pepsi",
+            "Pepsi Max",
+            "Sprite",
+            "Faxe Kondi"});
+            this.sodavandComboBox.Location = new System.Drawing.Point(604, 103);
+            this.sodavandComboBox.Name = "sodavandComboBox";
+            this.sodavandComboBox.Size = new System.Drawing.Size(121, 21);
+            this.sodavandComboBox.TabIndex = 51;
+            this.sodavandComboBox.Text = "Vælg sodavand";
+            this.sodavandComboBox.SelectedIndexChanged += new System.EventHandler(this.sodavandComboBox_SelectedIndexChanged);
+            // 
+            // bundComboBox
+            // 
+            this.bundComboBox.FormattingEnabled = true;
+            this.bundComboBox.Items.AddRange(new object[] {
+            "Almindelig",
+            "Dobbelt",
+            "Deep Pan"});
+            this.bundComboBox.Location = new System.Drawing.Point(461, 103);
+            this.bundComboBox.Name = "bundComboBox";
+            this.bundComboBox.Size = new System.Drawing.Size(121, 21);
+            this.bundComboBox.TabIndex = 52;
+            this.bundComboBox.Text = "Vælg bund";
+            this.bundComboBox.SelectedIndexChanged += new System.EventHandler(this.bundComboBox_SelectedIndexChanged);
+            // 
             // Ingredienser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1204, 658);
+            this.Controls.Add(this.bundComboBox);
+            this.Controls.Add(this.sodavandComboBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ostPriceLabel);
             this.Controls.Add(this.ostCheckBox);
@@ -842,5 +876,7 @@
         private System.Windows.Forms.Label ordreLabel;
         private System.Windows.Forms.Label valgtPizzaLabel;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox sodavandComboBox;
+        private System.Windows.Forms.ComboBox bundComboBox;
     }
 }

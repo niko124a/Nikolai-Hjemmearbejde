@@ -31,22 +31,38 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (eggCheckBox.Checked)
             {
-                ordreLabel.Text += $"Æg  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Æg";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                     menukort.totalPrice += 5;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
+
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!eggCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Æg  +5 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Æg";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 5;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Æg");
             }
         }
 
@@ -54,22 +70,38 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (agurkCheckBox.Checked)
             {
-                ordreLabel.Text += $"Agurk  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Agurk";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                     menukort.totalPrice += 5;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
+
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!agurkCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Agurk  +5 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Agurk";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 5;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Agurk");
             }
         }
 
@@ -77,22 +109,38 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (ananasCheckBox.Checked)
             {
-                ordreLabel.Text += $"Ananas  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Ananas";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                     menukort.totalPrice += 5;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
+
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!ananasCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Ananas  +5 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Ananas";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 5;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Ananas");
             }
         }
 
@@ -100,22 +148,38 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (aspargesCheckBox.Checked)
             {
-                ordreLabel.Text += $"Asparges  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Asparges";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                     menukort.totalPrice += 5;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
+
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!aspargesCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Asparges  +5 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Asparges";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 5;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Asparges");
             }
         }
 
@@ -123,22 +187,38 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (baconCheckBox.Checked)
             {
-                ordreLabel.Text += $"Bacon  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Bacon";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                     menukort.totalPrice += 10;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
+
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!baconCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Bacon  +10 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Bacon";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 10;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Bacon");
             }
         }
 
@@ -146,22 +226,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (champignonCheckBox.Checked)
             {
-                ordreLabel.Text += $"Champignon  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Champignon";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                     menukort.totalPrice += 5;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
+
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!champignonCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Champignon  +5 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Champignon";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 5;
-
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Champignon");
             }
         }
 
@@ -169,22 +264,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (chiliCheckBox.Checked)
             {
-                ordreLabel.Text += $"Chili  +2 {menukort.valuta}\n";
+                pizza.ingrName = "Chili";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +2 {menukort.valuta}\n";
                     menukort.totalPrice += 2;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!chiliCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Chili  +2 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Chili";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +2 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 2;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Chili");
             }
         }
 
@@ -192,22 +302,38 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (dressingCheckBox.Checked)
             {
-                ordreLabel.Text += $"Dressing  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Dressing";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                     menukort.totalPrice += 5;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
+
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!dressingCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Dressing  +5 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Dressing";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 5;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Dressing");
             }
         }
 
@@ -215,22 +341,38 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (oksekødCheckBox.Checked)
             {
-                ordreLabel.Text += $"Hakket Oksekød  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Hakket Oksekød";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                     menukort.totalPrice += 10;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
+
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!oksekødCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Hakket Oksekød  +10 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Hakket Oksekød";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 10;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Hakket Oksekød");
             }
         }
 
@@ -238,22 +380,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (hvidløgCheckBox.Checked)
             {
-                ordreLabel.Text += $"Hvidløg  +2 {menukort.valuta}\n";
+                pizza.ingrName = "Hvidløg";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +2 {menukort.valuta}\n";
                     menukort.totalPrice += 2;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!hvidløgCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Hvidløg  +2 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Hvidløg";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +2 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 2;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Hvidløg");
             }
         }
 
@@ -261,22 +418,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (kebabCheckBox.Checked)
             {
-                ordreLabel.Text += $"Kebab  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Kebab";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                     menukort.totalPrice += 10;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!kebabCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Kebab  +10 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Kebab";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 10;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Kebab");
             }
         }
 
@@ -284,22 +456,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (kyllingCheckBox.Checked)
             {
-                ordreLabel.Text += $"Kylling  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Kylling";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                     menukort.totalPrice += 10;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!kyllingCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Kylling  +10 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Kylling";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 10;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Kylling");
             }
         }
 
@@ -307,22 +494,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (løgCheckBox.Checked)
             {
-                ordreLabel.Text += $"Løg  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Løg";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                     menukort.totalPrice += 5;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!løgCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Løg  +5 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Løg";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 5;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Løg");
             }
         }
 
@@ -330,22 +532,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (paprikaCheckBox.Checked)
             {
-                ordreLabel.Text += $"Paprika  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Paprika";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                     menukort.totalPrice += 5;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!paprikaCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Paprika  +5 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Paprika";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 5;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Paprika");
             }
         }
 
@@ -353,22 +570,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (pepperoniCheckBox.Checked)
             {
-                ordreLabel.Text += $"Pepperoni  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Pepperoni";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                     menukort.totalPrice += 10;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!pepperoniCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Pepperoni  +10 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Pepperoni";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 10;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Pepperoni");
             }
         }
 
@@ -376,22 +608,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (rejerCheckBox.Checked)
             {
-                ordreLabel.Text += $"Rejer  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Rejer";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                     menukort.totalPrice += 10;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!rejerCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Rejer  +10 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Rejer";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 10;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Rejer");
             }
         }
 
@@ -399,22 +646,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (salatCheckBox.Checked)
             {
-                ordreLabel.Text += $"Salat  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Salat";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                     menukort.totalPrice += 5;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!salatCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Salat  +5 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Salat";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 5;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Add("Salat");
             }
         }
 
@@ -422,22 +684,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (skinkeCheckBox.Checked)
             {
-                ordreLabel.Text += $"Skinke  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Skinke";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                     menukort.totalPrice += 10;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!skinkeCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Skinke  +10 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Skinke";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 10;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Skinke");
             }
         }
 
@@ -445,22 +722,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (tabascoCheckBox.Checked)
             {
-                ordreLabel.Text += $"Tabasco  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Tabasco";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                     menukort.totalPrice += 5;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!tabascoCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Tabasco  +5 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Tabasco";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 5;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Tabasco");
             }
         }
 
@@ -468,22 +760,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (tomatskiverCheckBox.Checked)
             {
-                ordreLabel.Text += $"Tomatskiver  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Tomatskiver";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                     menukort.totalPrice += 5;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!tomatskiverCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Tomatskiver  +5 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Tomatskiver";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 5;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Tomatskiver");
             }
         }
 
@@ -491,22 +798,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (tunCheckBox.Checked)
             {
-                ordreLabel.Text += $"Tun  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Tun";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                     menukort.totalPrice += 10;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!tunCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Tun  +10 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Tun";
                 if (antalIngredienserValgt > 4)
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
                     menukort.totalPrice -= 10;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Tun");
             }
         }
 
@@ -514,22 +836,37 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (ostCheckBox.Checked)
             {
-                ordreLabel.Text += $"Ost  +2 {menukort.valuta}\n";
+                pizza.ingrName = "Ost";
+                Pizza.IngrCol.Add(pizza.ingrName);
                 if (antalIngredienserValgt >= 4)
+                {
+                    ordreLabel.Text += $"{pizza.ingrName}  +2 {menukort.valuta}\n";
                     menukort.totalPrice += 2;
+                }
+                else
+                    ordreLabel.Text += $"{pizza.ingrName}\n";
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt++;
             }
             else if (!ostCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Ost  +2 {menukort.valuta}\n", "");
-                ordreLabel.Text = replacement;
+                pizza.ingrName = "Ost";
                 if (antalIngredienserValgt > 4)
-                menukort.totalPrice -= 2;
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +2 {menukort.valuta}\n", "");
+                    ordreLabel.Text = replacement;
+                    menukort.totalPrice -= 2;
+                }
+                else
+                {
+                    string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}\n", "");
+                    ordreLabel.Text = replacement;
+                }
 
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
                 antalIngredienserValgt--;
+                Pizza.IngrCol.Remove("Ost");
             }
         }
     }

@@ -5,12 +5,13 @@ namespace Uge_14___miniprojekt__Pizzaria_
 {
     public partial class Ingredienser : Form
     {
+        public bool nyBund = true;
         public Pizza pizza;
         public Menukort menukort;
         public Ingredienser ingredienser;
         public void ShowPizzaInfo()
         {
-            pizzaIDLabel.Text = $"{pizza.Id.ToString()}.";
+            pizzaIDLabel.Text = $"{pizza.Id}.";
             pizzaNameLabel.Text = $"{pizza.Name} {pizza.size}";
             pizzaInfoLabel.Text = $"{pizza.Info}";
             valgtPizzaLabel.Text = $"{pizza.Name} {pizza.size}";
@@ -70,16 +71,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (ananasCheckBox.Checked)
             {
-                ordreLabel.Text += $"Ananas  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Ananas";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                 menukort.totalPrice += 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!ananasCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Ananas  +5 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Ananas");
             }
         }
 
@@ -87,16 +91,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (aspargesCheckBox.Checked)
             {
-                ordreLabel.Text += $"Asparges  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Asparges";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                 menukort.totalPrice += 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!aspargesCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Asparges  +5 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Asparges");
             }
         }
 
@@ -104,16 +111,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (baconCheckBox.Checked)
             {
-                ordreLabel.Text += $"Bacon  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Bacon";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                 menukort.totalPrice += 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!baconCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Bacon  +10 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Bacon");
             }
         }
 
@@ -121,16 +131,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (champignonCheckBox.Checked)
             {
-                ordreLabel.Text += $"Champignon  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Champignon";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                 menukort.totalPrice += 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!champignonCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Champignon  +5 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Champignon");
             }
         }
 
@@ -138,16 +151,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (chiliCheckBox.Checked)
             {
-                ordreLabel.Text += $"Chili  +2 {menukort.valuta}\n";
+                pizza.ingrName = "Chili";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +2 {menukort.valuta}\n";
                 menukort.totalPrice += 2;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!chiliCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Chili  +2 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +2 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 2;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Chili");
             }
         }
 
@@ -155,16 +171,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (dressingCheckBox.Checked)
             {
-                ordreLabel.Text += $"Dressing  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Dressing";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                 menukort.totalPrice += 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!dressingCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Dressing  +5 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Dressing");
             }
         }
 
@@ -172,16 +191,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (oksekødCheckBox.Checked)
             {
-                ordreLabel.Text += $"Hakket Oksekød  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Hakket Oksekød";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                 menukort.totalPrice += 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!oksekødCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Hakket Oksekød  +10 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Hakket Oksekød");
             }
         }
 
@@ -189,16 +211,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (hvidløgCheckBox.Checked)
             {
-                ordreLabel.Text += $"Hvidløg  +2 {menukort.valuta}\n";
+                pizza.ingrName = "Hvidløg";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +2 {menukort.valuta}\n";
                 menukort.totalPrice += 2;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!hvidløgCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Hvidløg  +2 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +2 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 2;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Hvidløg");
             }
         }
 
@@ -206,16 +231,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (kebabCheckBox.Checked)
             {
-                ordreLabel.Text += $"Kebab  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Kebab";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                 menukort.totalPrice += 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!kebabCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Kebab  +10 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Kebab");
             }
         }
 
@@ -223,16 +251,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (kyllingCheckBox.Checked)
             {
-                ordreLabel.Text += $"Kylling  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Kylling";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                 menukort.totalPrice += 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!kyllingCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Kylling  +10 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Kylling");
             }
         }
 
@@ -240,16 +271,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (løgCheckBox.Checked)
             {
-                ordreLabel.Text += $"Løg  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Løg";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                 menukort.totalPrice += 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!løgCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Løg  +5 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Løg");
             }
         }
 
@@ -257,16 +291,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (paprikaCheckBox.Checked)
             {
-                ordreLabel.Text += $"Paprika  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Paprika";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                 menukort.totalPrice += 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!paprikaCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Paprika  +5 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Paprika");
             }
         }
 
@@ -274,16 +311,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (pepperoniCheckBox.Checked)
             {
-                ordreLabel.Text += $"Pepperoni  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Pepperoni";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                 menukort.totalPrice += 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!pepperoniCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Pepperoni  +10 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Pepperoni");
             }
         }
 
@@ -291,16 +331,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (rejerCheckBox.Checked)
             {
-                ordreLabel.Text += $"Rejer  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Rejer";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                 menukort.totalPrice += 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!rejerCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Rejer  +10 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Rejer");
             }
         }
 
@@ -308,16 +351,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (salatCheckBox.Checked)
             {
-                ordreLabel.Text += $"Salat  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Salat";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                 menukort.totalPrice += 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!salatCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Salat  +5 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Salat");
             }
         }
 
@@ -325,16 +371,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (skinkeCheckBox.Checked)
             {
-                ordreLabel.Text += $"Skinke  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Skinke";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                 menukort.totalPrice += 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!skinkeCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Skinke  +10 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Skinke");
             }
         }
 
@@ -342,16 +391,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (tabascoCheckBox.Checked)
             {
-                ordreLabel.Text += $"Tabasco  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Tabasco";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                 menukort.totalPrice += 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!tabascoCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Tabasco  +5 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +5 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Tabasco");
             }
         }
 
@@ -359,16 +411,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (tomatskiverCheckBox.Checked)
             {
-                ordreLabel.Text += $"Tomatskiver  +5 {menukort.valuta}\n";
+                pizza.ingrName = "Tomatskiver";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +5 {menukort.valuta}\n";
                 menukort.totalPrice += 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!tomatskiverCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Tomatskiver  +5 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}+5 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 5;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Tomatskiver");
             }
         }
 
@@ -376,16 +431,19 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (tunCheckBox.Checked)
             {
-                ordreLabel.Text += $"Tun  +10 {menukort.valuta}\n";
+                pizza.ingrName = "Tun";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +10 {menukort.valuta}\n";
                 menukort.totalPrice += 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!tunCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Tun  +10 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +10 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 10;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Tun");
             }
         }
 
@@ -393,17 +451,45 @@ namespace Uge_14___miniprojekt__Pizzaria_
         {
             if (ostCheckBox.Checked)
             {
-                ordreLabel.Text += $"Ost  +2 {menukort.valuta}\n";
+                pizza.ingrName = "Ost";
+                Pizza.IngrCol.Add(pizza.ingrName);
+                ordreLabel.Text += $"{pizza.ingrName}  +2 {menukort.valuta}\n";
                 menukort.totalPrice += 2;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
             }
             else if (!ostCheckBox.Checked)
             {
-                string replacement = ordreLabel.Text.Replace($"Ost  +2 {menukort.valuta}\n", "");
+                string replacement = ordreLabel.Text.Replace($"{pizza.ingrName}  +2 {menukort.valuta}\n", "");
                 ordreLabel.Text = replacement;
                 menukort.totalPrice -= 2;
                 totalPriceLabel.Text = menukort.totalPrice.ToString();
+                Pizza.IngrCol.Remove("Ost");
             }
+        }
+
+        private void bundComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (nyBund)
+            {
+                pizza.bund = bundComboBox.Text;
+                ordreLabel.Text += $"{pizza.bund}  +15 {menukort.valuta}\n";
+                menukort.totalPrice += 15;
+                totalPriceLabel.Text = menukort.totalPrice.ToString();
+                nyBund = false;
+            }
+            else if (!nyBund)
+            {
+                string replacement = ordreLabel.Text.Replace($"{pizza.bund}  +15 {menukort.valuta}\n", "");
+                ordreLabel.Text = replacement;
+                menukort.totalPrice -= 15;
+                totalPriceLabel.Text = menukort.totalPrice.ToString();
+                nyBund = true;
+            }
+        }
+
+        private void sodavandComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pizza.sodavand = sodavandComboBox.Text;
         }
     }
 }

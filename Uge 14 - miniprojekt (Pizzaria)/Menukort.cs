@@ -42,9 +42,7 @@ namespace Uge_14___miniprojekt__Pizzaria_
                 pizza = Pizza.pizzaCol[3];
 
             else
-            {
                 MessageBox.Show("Vælg pizza størelse inden du kan fortsætte");
-            }
 
             if (pizza == null)
                 return;
